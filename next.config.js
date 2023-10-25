@@ -3,19 +3,19 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   modularizeImports: {
-    '@mui/icons-material': {
-      transform: '@mui/icons-material/{{member}}',
+    "@mui/icons-material": {
+      transform: "@mui/icons-material/{{member}}",
     },
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'source.unsplash.com',
-        port: '',
-        pathname: '/random',
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "d26whlelwrmtms.cloudfront.net",
+    //     port: "",
+    //     pathname: "/netflix/demo",
+    //   },
+    // ],
   },
 };
 
