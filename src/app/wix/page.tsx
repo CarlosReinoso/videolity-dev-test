@@ -19,7 +19,7 @@ export default function WixPage() {
         width="100%"
         height="100%"
         src="https://videolity-demo.web.app/mobile/netflix/demo"
-        frameborder="0"
+        frameBorder="0"
       />
     </Box>
   );
