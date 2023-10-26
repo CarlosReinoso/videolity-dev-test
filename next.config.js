@@ -8,14 +8,6 @@ const nextConfig = {
     },
   },
   images: {
-    // remotePatterns: [
-    //   {
-    //     protocol: "https",
-    //     hostname: "d26whlelwrmtms.cloudfront.net",
-    //     port: "",
-    //     pathname: "/netflix/demo",
-    //   },
-    // ],
   },
 };
 

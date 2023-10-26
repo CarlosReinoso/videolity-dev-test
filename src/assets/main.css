@@ -1,0 +1,25 @@
+/* Webkit-based browsers (Chrome, Safari) */
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+}
+
+/* Scrollbar Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #d6dee1; /* Thumb color */
+  border-radius: 25px; /* Rounded corners */
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+
+/* Scrollbar Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a8bbbf; /* Thumb color on hover */
+  border: 5px solid transparent;
+  background-clip: content-box;
+}

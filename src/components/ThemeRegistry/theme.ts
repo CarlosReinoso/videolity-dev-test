@@ -1,27 +1,43 @@
-import { Roboto } from 'next/font/google';
-import { createTheme } from '@mui/material/styles';
+import { Roboto } from "next/font/google";
+import { createTheme } from "@mui/material/styles";
 
 const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const theme = createTheme({
   palette: {
-    mode: 'light',
+    mode: "light",
   },
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
+
   components: {
-    MuiAlert: {
+    MuiCssBaseline: {
       styleOverrides: {
-        root: ({ ownerState }) => ({
-          ...(ownerState.severity === 'info' && {
-            backgroundColor: '#60a5fa',
-          }),
-        }),
+        "@global": {
+          /* Add your scrollbar styling code here */
+          /* Webkit/Blink Browsers */
+          "::-webkit-scrollbar": {
+            width: "20px",
+          },
+          "::-webkit-scrollbar-track": {
+            background: "#f1f1f1",
+          },
+          "::-webkit-scrollbar-thumb": {
+            background: "#888",
+          },
+          "::-webkit-scrollbar-thumb:hover": {
+            background: "#555",
+          },
+
+          /* Style the scrollbar for Firefox */
+          "scrollbar-width": "thin",
+          "scrollbar-color": "#f1f1f1 #888",
+        },
       },
     },
   },
